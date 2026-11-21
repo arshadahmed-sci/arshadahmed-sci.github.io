@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arshad Ahmed</title>
+<meta name="author" content="Arshad Ahmed">
+<meta name="description" content="Arshad Ahmed, 4th-year BS-MS student at IISER Pune. DNA bubble dynamics, protein folding and physics education.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230B6B53'/><text x='16' y='23' font-size='20' text-anchor='middle' fill='white' font-family='Georgia,serif'>A</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--ink:#2a2d2c;--muted:#6a7370;--accent:#0B6B53;--rule:#e3e8e6;--soft:#f4f7f6;
+  --slab:'Roboto Slab',Georgia,serif;--sans:Roboto,'Helvetica Neue',Arial,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#151a19;--ink:#e2e7e5;--muted:#98a4a0;--accent:#6fcfb4;--rule:#2c3633;--soft:#1c2321}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:4.5rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.7 var(--sans)}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.25rem}
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--rule)}
+header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.25rem 1.5rem;padding-top:.85rem;padding-bottom:.85rem}
+.brand{font:300 1.15rem var(--slab);color:var(--ink)}
+.brand b{font-weight:700}
+.brand:hover{text-decoration:none}
+nav a{color:var(--muted);font-size:.95rem;margin-left:1.4rem;padding-bottom:.15rem}
+nav a:first-child{margin-left:0}
+nav a:hover,nav a.on{color:var(--ink);text-decoration:none;border-bottom:2px solid var(--accent)}
+.hero{display:flex;gap:2.5rem;align-items:flex-start;padding:2.75rem 0 1rem}
+.hero .txt{flex:1;min-width:0}
+h1{font:300 2.5rem/1.15 var(--slab);margin:0 0 1.25rem}
+h1 b{font-weight:700}
+.hero p{margin:0 0 1rem}
+.side{flex:0 0 13rem;text-align:center}
+.pic{display:block;width:13rem;height:13rem;border-radius:50%;object-fit:cover;background:var(--soft);border:1px solid var(--rule)}
+.ph{display:flex;align-items:center;justify-content:center;font:300 3.5rem var(--slab);color:var(--muted)}
+.cap{margin:.6rem 0 0;font-size:.9rem;color:var(--muted);line-height:1.45}
+h2{font:500 1.55rem/1.25 var(--slab);margin:0 0 1rem}
+section{padding:1.6rem 0}
+.icons{display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;margin:1.25rem 0 0;padding:0;list-style:none}
+.icons a{display:inline-flex;align-items:center;gap:.45rem;font-size:.95rem}
+.icons svg{width:1.15rem;height:1.15rem;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.row{display:grid;grid-template-columns:8.5rem 1fr;gap:.2rem 1.5rem;padding:1rem 0;border-top:1px solid var(--rule)}
+.row:first-of-type{border-top:0;padding-top:0}
+.when{font-size:.92rem;color:var(--muted);padding-top:.15rem}
+.row h3{font:500 1.08rem/1.4 var(--sans);margin:0}
+.row .org{color:var(--muted);margin:0 0 .4rem;font-size:.96rem}
+.row p{margin:0 0 .4rem}
+footer{border-top:1px solid var(--rule);margin-top:2rem;padding:1.25rem 0 2.5rem;color:var(--muted);font-size:.9rem;text-align:center}
+@media (max-width:700px){
+  h1{font-size:2rem}
+  .hero{flex-direction:column-reverse;gap:1.5rem;padding-top:1.75rem}
+  .side{flex:none;align-self:center}
+  .pic{width:10rem;height:10rem}
+  .row{grid-template-columns:1fr}
+  .row{gap:0}
+  nav a{margin-left:1rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top"><b>Arshad</b> Ahmed</a>
+    <nav aria-label="Main">
+      <a class="on" href="#top">about</a>
+      <a href="#research">research</a>
+      <a href="#education">education</a>
+      <a href="#writing">writing</a>
+      <a href="Arshad_Ahmed_CV.pdf">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+  <div class="hero">
+    <div class="txt">
+      <h1><b>Arshad</b> Ahmed</h1>
+      <p>I’m a student of physics and biology interested in how DNA and proteins move. How does a stretch of DNA open into a bubble when it is heated? What physical mechanisms govern denaturation? How does a protein switch from one fold to another? I use molecular dynamics simulations and data analysis to go after these questions.</p>
+      <p>I’m a 4th-year BS-MS student in Interdisciplinary Sciences at IISER Pune, expected to finish in 2028. Since April 2026 I’ve been at the University of Cape Town, working with Dr Malcolm Hillebrand on DNA bubble formation. I also research how to design physics learning experiences for secondary school students, and I write stories and poems.</p>
+      <ul class="icons">
+        <li><a href="mailto:arshad.ahmed@students.iiserpune.ac.in"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Email</a></li>
+        <li><a href="https://www.linkedin.com/in/arshad-ahmed-iiser"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 11v5M8 8v.01M12 16v-5M12 13c0-1.5 1-2 2-2s2 .7 2 2v3"/></svg>LinkedIn</a></li>
+        <li><a href="https://arshsefarshtak.wordpress.com"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1-4L16 5l3 3L8 19l-4 1zM14 7l3 3"/></svg>Blog</a></li>
+      </ul>
+    </div>
+    <div class="side">
+      <img class="pic" src="assets/prof_pic.jpeg" alt="Photo of Arshad Ahmed" onerror="this.outerHTML='<div class=&quot;pic ph&quot; aria-hidden=&quot;true&quot;>AA</div>'">
+      <p class="cap">IISER Pune<br>Pune, India</p>
+    </div>
+  </div>
+
+  <section id="research">
+    <h2>research</h2>
+    <div class="row">
+      <div class="when">April 2026 to present</div>
+      <div>
+        <h3>DNA bubble formation</h3>
+        <p class="org">University of Cape Town, Department of Mathematics and Applied Mathematics. Supervisor: Dr Malcolm Hillebrand</p>
+        <p>I wrote a pipeline in Python, OpenMM and GROMACS that finds, measures and plots the short-lived openings in DNA (“breathing”) in simulation trajectories. I’m now comparing the all-atom results with coarse-grained models to understand what drives denaturation.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="when">Summer 2025</div>
+      <div>
+        <h3>Fold-switching proteins</h3>
+        <p class="org">IIT Bombay, Department of Chemistry. Supervisor: Dr Ishita Sengupta</p>
+        <p>I analysed experimental folding data to model folding pathways and free-energy landscapes, and to look for on-pathway intermediates in metamorphic proteins.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="when">Summer 2024</div>
+      <div>
+        <h3>Polymer physics and DNA biophysics</h3>
+        <p class="org">IIT Bhubaneswar, Department of Physics. Supervisor: Dr Indresh Yadav</p>
+        <p>A reading project on random walks, self-avoiding walks and statistical models of polymers, and on facilitated diffusion and protein search along DNA.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>science education</h2>
+    <div class="row">
+      <div class="when">May to June 2026</div>
+      <div>
+        <h3>Physics education research</h3>
+        <p class="org">Azim Premji University. Supervisor: Dr Anish Mokashi</p>
+        <p>I worked on designing learning experiences in physics for secondary school students: building conjecture maps and instructional modules from constructivism, constructionism and counterfactual reasoning, and going through high-school physics curricula with school teachers.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="when">June 2026</div>
+      <div>
+        <h3>Teacher workshop</h3>
+        <p class="org">Eklavya Foundation, Bhopal</p>
+        <p>A workshop for science teachers and teacher-educators from across the country. I helped run the physics sessions on the science of sound and documented the sessions and the discussions.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="when">2023 to present</div>
+      <div>
+        <h3>Disha</h3>
+        <p class="org">IISER Pune</p>
+        <p>Disha is a student-run organisation for accessible education for underprivileged students in and around Pune. I coordinated its Science Nurture Program, which teaches science in government-aided schools, and I’m now the General Coordinator.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="when">2024 to 2025</div>
+      <div>
+        <h3>SciCon</h3>
+        <p class="org">Mimamsa, IISER Pune</p>
+        <p>Coordinator of IISER Pune’s science fest, handling planning and logistics between student committees, faculty advisors and visiting schools.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="writing">
+    <h2>writing and skills</h2>
+    <p>I write short stories, poems and reflections on my blog, <a href="https://arshsefarshtak.wordpress.com"><em>Arsh Se Farsh Tak</em></a>.</p>
+    <p>Technical skills: molecular dynamics (GROMACS, OpenMM), Python, Matplotlib, PyMOL, DynaFit, LaTeX, C++ for Arduino. Languages: English, Hindi, Urdu and Odia.</p>
+    <p>If you’d like to talk about my work or any of the projects above, email me at <a href="mailto:arshad.ahmed@students.iiserpune.ac.in">arshad.ahmed@students.iiserpune.ac.in</a>.</p>
+  </section>
+</main>
+
+<footer>© 2026 Arshad Ahmed</footer>
+</body>
+</html>
